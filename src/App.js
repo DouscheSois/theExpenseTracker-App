@@ -14,6 +14,8 @@ const App = () => (
 
 export default App;
 
+//Figure it out, how the fuck to render it to the dom in table mode setting style with a delete button.
+
 // Each expense should include:
 
 // The date of expense
