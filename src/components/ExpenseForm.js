@@ -1,27 +1,24 @@
 import React, { useState } from "react";
 
 const ExpenseForm = () => {
-  const [expenseData, setExpenseData] = useState({
+  const [expense, setExpense] = useState({
     description: "",
     location: "",
     date: "",
     amount: "",
   });
 
-  const { description, location, date, amount } = expenseData;
+  const { description, location, date, amount } = expense;
 
   const onChange = (e) =>
-    setExpenseData({
-      ...expenseData,
+    setExpense({
+      ...expense,
       [e.target.name]: e.target.value,
     });
 
   const onClick = (e) => {
-    if ((description !== "") & (date !== "") & (amount !== "")) {
-      console.log(expenseData);
-    } else {
-      console.log("Missing Data");
-    }
+    e.preventDefault();
+    console.log(expense);
   };
 
   return (
@@ -33,7 +30,6 @@ const ExpenseForm = () => {
         name="description"
         value={description}
         onChange={(e) => onChange(e)}
-        required
       />
       <input
         type="text"
@@ -49,7 +45,6 @@ const ExpenseForm = () => {
         name="date"
         value={date}
         onChange={(e) => onChange(e)}
-        required
       />
       <input
         type="amount"
@@ -58,7 +53,6 @@ const ExpenseForm = () => {
         name="amount"
         value={amount}
         onChange={(e) => onChange(e)}
-        required
       />
       <div className="input-group-append">
         <button
