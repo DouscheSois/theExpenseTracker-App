@@ -1,6 +1,6 @@
 # expense-tracker
 
-<h1>Expense Tracker App built in React, JS, CSS, and HTML.</h1>
+<h1>Expense Tracker App built in React, JS & JSX, CSS, and HTML.</h1>
 
 -React Hooks
 
