@@ -1,34 +1,82 @@
 body {
   background: beige;
+  text-align: center;
 }
 
-.input-group {
-  width: 70%;
-  margin-left: 15%;
-  margin-right: 15%;
+.inputs {
+  width: 100%;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  padding: 2rem;
+  background-color: aquamarine;
+  border-radius: 2rem;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+}
+
+.inputs input {
+  margin-bottom: 0.3rem;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.inputs input:hover {
+  opacity: 0.8;
+}
+
+.input-group-append button {
+  margin-top: 0.5rem;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .btn:hover {
-  opacity: 0.4;
+  opacity: 0.8;
 }
 
-.table {
+.expense-list {
+  margin-top: 5rem;
+  width: 100%;
+}
+
+.expense-list ul {
+  width: 100%;
+}
+
+.expense-list li {
+  list-style: none;
+  padding: 1rem;
+  background-color: lightblue;
+  opacity: 0.7;
   width: 80%;
-  margin-top: 2%;
-  margin-right: 10%;
   margin-left: 10%;
+  margin-right: 10%;
+  border-bottom: 0.5px dotted white;
 }
 
-@media (max-width: 700px) {
-  .input-group {
-    width: 95%;
-    margin-left: 2.5%;
-    margin-right: 2.5%;
-  }
-
-  .table {
-    width: 95%;
-    margin-right: 2.5%;
-    margin-left: 2.5%;
-  }
+.delete {
+  width: 2rem;
+  background-color: red;
+  color: white;
 }
+
+.expense-amount {
+  color: green;
+}
+
+.expense-description {
+  text-decoration: underline;
+}
+
+.expense-location {
+  color: blue;
+}
+
+.expense-date {
+  font-weight: bold;
+}
+
+/* @media (max-width: 700px) {
+} */

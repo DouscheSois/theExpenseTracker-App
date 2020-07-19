@@ -5,11 +5,13 @@ import { StoreContext } from "../contextAPI/Store";
 const ExpenseList = () => {
   const { expenses } = useContext(StoreContext);
   return (
-    <ul>
-      {expenses.map((expense) => (
-        <Expense key={expense.id} expense={expense} />
-      ))}
-    </ul>
+    <div className="expense-list">
+      <ul>
+        {expenses.map((expense) => (
+          <Expense key={expense.id} expense={expense} />
+        ))}
+      </ul>
+    </div>
   );
 };
 
