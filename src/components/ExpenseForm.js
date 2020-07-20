@@ -1,6 +1,6 @@
 import React, { useState, useContext } from "react";
-import { GenerateID } from "./GenerateID";
 import { StoreContext } from "../contextAPI/Store";
+import { GenerateID } from "./GenerateID";
 
 const ExpenseForm = () => {
   const [expense, setExpense] = useState({
@@ -28,6 +28,7 @@ const ExpenseForm = () => {
   const resetForm = () => {
     setExpense({
       ...expense,
+      id: GenerateID(),
       description: "",
       location: "",
       date: "",
