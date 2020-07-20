@@ -1,13 +1,10 @@
 import React, { useState, useContext } from "react";
+import { GenerateID } from "./GenerateID";
 import { StoreContext } from "../contextAPI/Store";
 
 const ExpenseForm = () => {
-  function generateID() {
-    return Math.floor(Math.random() * 1000000000);
-  }
-
   const [expense, setExpense] = useState({
-    id: generateID(),
+    id: GenerateID(),
     description: "",
     location: "",
     date: "",
@@ -24,10 +21,26 @@ const ExpenseForm = () => {
 
   const { AddExpense } = useContext(StoreContext);
 
+  // const refreshPage = () => {
+  //   window.location.reload(false);
+  // };
+
+  const resetForm = () => {
+    setExpense({
+      ...expense,
+      description: "",
+      location: "",
+      date: "",
+      amount: "",
+    });
+  };
+
   const onClick = (e) => {
     e.preventDefault(); //How useful is this in this kind of app?
-    console.log(expense);
     AddExpense(expense);
+    console.log(expense);
+    resetForm();
+    // refreshPage();
   };
 
   return (
