@@ -14,4 +14,6 @@
 
 -Save to localStorage
 
+-clear form after submit
+
 -Pretty it up
