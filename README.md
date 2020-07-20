@@ -10,10 +10,11 @@
 
 -Description: User has the ability to add a new expense and to delete an expense if desired.
 
+<small>Not online yet but will put a link here when available</small>
+
 <h2>// Work needed:</h2>
 
 -Save to localStorage
-
 
 -Pretty it up
 
