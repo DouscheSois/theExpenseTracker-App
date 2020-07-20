@@ -1,4 +1,4 @@
-# expense-tracker
+# theExpenseTracker-App
 
 <h1>Expense Tracker App built in React, JS & JSX, CSS, and HTML.</h1>
 
