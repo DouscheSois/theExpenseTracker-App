@@ -1,6 +1,6 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import { StoreContext } from "../contextAPI/Store";
-import { GenerateID } from "./GenerateID";
+import { GenerateID } from "./helper/GenerateID";
 
 const ExpenseForm = () => {
   const [expense, setExpense] = useState({
@@ -21,10 +21,6 @@ const ExpenseForm = () => {
 
   const { AddExpense } = useContext(StoreContext);
 
-  // const refreshPage = () => {
-  //   window.location.reload(false);
-  // };
-
   const resetForm = () => {
     setExpense({
       ...expense,
@@ -37,11 +33,14 @@ const ExpenseForm = () => {
   };
 
   const onClick = (e) => {
-    e.preventDefault(); //How useful is this in this kind of app?
-    AddExpense(expense);
-    console.log(expense);
-    resetForm();
-    // refreshPage();
+    if ((description !== "", location !== "", date !== "", amount !== "")) {
+      e.preventDefault(); //How useful is this in this kind of app?
+      AddExpense(expense);
+      console.log(expense);
+      resetForm();
+    } else {
+      alert("Description, Location, Date, and Amount are needed");
+    }
   };
 
   return (
