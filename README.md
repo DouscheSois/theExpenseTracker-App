@@ -10,7 +10,7 @@
 
 <small>Live Link: https://the-expense-tracker-app.herokuapp.com/</small>
 
-<img src="images/img01.png" width="400" height="300">
+<img src="images/img01.png" width="400" height="500">
 
 <h2>Work needed:</h2>
 
