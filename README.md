@@ -16,7 +16,7 @@
 
 -Save to localStorage
 
--Pretty it up
+-Make it sleak
 
 <h2>Summary</h2>
 
