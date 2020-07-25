@@ -1,18 +1,16 @@
 # theExpenseTracker-App
 
-<h1>Expense Tracker App built in React, JS & JSX, CSS, and HTML.</h1>
+<h1>Expense Tracker App built in React, JS, CSS, and HTML.</h1>
 
 -React Hooks
 
 -ContextAPI
 
--No Dependencies
-
 -Description: User has the ability to add a new expense and to delete an expense if desired.
 
-<small>Not online yet but will put a link here when available</small>
+<small>Live Link: https://the-expense-tracker-app.herokuapp.com/</small>
 
-<h2>// Work needed:</h2>
+<h2>Work needed:</h2>
 
 -Save to localStorage
 
