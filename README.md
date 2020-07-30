@@ -14,7 +14,7 @@
 
 <h2>Summary</h2>
 
-I've always wanted to learn React because it's attractive. I also wanted to learn how to use React hooks and the contextAPI for state management. This ExpenseTracker App is a good way to practice what I have been reading online (React Hooks, ContextAPI, Props & Components) on the React Doc. Webpage.
+I've always wanted to learn React because of its popularity and functionality. I wanted to learn how to use React hooks and the contextAPI for state management more specifically. This ExpenseTracker App is a good way to practice the basics of what I have been reading online so far (React Hooks, ContextAPI, Props & Components) on the React Doc. Webpage and other sources.
 
 <h2>Author</h2>
 
