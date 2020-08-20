@@ -1,6 +1,6 @@
 # theExpenseTracker-App
 
-<h1>Expense Tracker App built in React, JS, CSS, and HTML.</h1>
+<h2>Expense Tracker App built in React, JS, CSS, and HTML.</h2>
 
 -React Hooks
 
@@ -18,4 +18,4 @@ I've always wanted to learn React because of its popularity and functionality. I
 
 <h2>Author</h2>
 
-Roger Alexander - Full Stack Developer
+Roger Alexander - Full Stack Developer <a href="http://www.douschesois.com">Portfolio Website</a>
