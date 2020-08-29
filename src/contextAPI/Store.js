@@ -10,7 +10,7 @@ export const StoreContext = createContext(initialState);
 export const StoreProvider = ({ children }) => {
   const [state, dispatch] = useReducer(Reducer, initialState);
 
-  //Action
+  //Action()
   const DeleteExpense = (id) => {
     dispatch({
       type: "DELETE_EXPENSE",
